@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  padding: 12px 0; 
+
+  position: relative;
+  z-index: 100;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar-logo img {
+  height: 90px; 
+  object-fit: contain;
+}
+
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 38px; 
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #2D2D2D;
+  transition: color 0.3s;
+  font-family: 'Karla', sans-serif;
+}
+
+.navbar-links a:hover {
+  color: #A3B18A;
+}
+
+.nav-bars {
+  background: #A3B18A;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  cursor: pointer;
+  display: none;
+}
+
+.nav-bars img {
+  height: 18px; 
+  width: 18px;
+  color: #FDFBFF;
+}
+
+
+
+
+/* --- Mobile Menu --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 280px;
+  height: 70vh;
+  background: #819361;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px 40px;
+  transition: left 0.3s ease-in-out;
+  font-family: 'Poppins', 'sans-serif';
+  border: transparent;
+  
+
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.mobile-menu hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin: 12px 0;
+}
+
+.mobile-menu.open {
+  left: 0;
+}
+
+/* Bottom Info */
+.mobile-info1 {
+  margin-top: auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-item1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-item1 img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.info-item1 span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 16px;
+}
+
+
+/* --- Media Queries --- */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 40px;
+  }
+  .navbar-links {
+    gap: 32px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .navbar-links a {
+    display: none;
+     color: #fff; 
+  }
+  .nav-bars {
+    display: flex; 
+  }
+}

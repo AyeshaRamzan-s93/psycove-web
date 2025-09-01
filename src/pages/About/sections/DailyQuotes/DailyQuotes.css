@@ -1,0 +1,226 @@
+
+
+/* SECTION WRAPPER */
+.quotes-section {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.quotes-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+.quotes-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;  
+  column-gap: 80px;          
+  flex-wrap: wrap;
+}
+
+
+/* LEFT */
+.quotes-left {
+  flex: 1;
+}
+
+.quotes-heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #222;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 34px;
+
+}
+
+.quotes-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-circle {
+  width: 93px;
+  height: 93px;
+  border-radius: 50%;
+  background: #636363;
+  
+}
+
+.author-info h4 {
+  font-size: 29px;
+  line-height: 130%;
+  font-weight: 500;
+  color: #2d2d2d;
+  font-family: "Poppins", sans-serif;
+}
+
+.author-info p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Karla', sans-serif;
+  color: #636363;
+}
+
+/* RIGHT */
+.quotes-right {
+  flex: 1.2;
+  min-width: 350px;
+}
+
+.quotes-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #C9C9C9;
+  line-height: 1.5;
+  line-height: 120%;
+  font-family: "Poppins", sans-serif;
+}
+
+.quotes-text span {
+  color: #000; 
+  font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+  font-family: "Poppins", sans-serif;
+}
+
+.share-box {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.share-box span {
+  font-size: 14px;
+  color: #444;
+}
+
+.share-icons {
+  display: flex;
+  gap: 4px;
+}
+
+.share-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+
+/* STATS */
+
+.quotes-stats {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat h4 {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #222;
+  text-align: left;
+}
+
+.stat h4 .sup {
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 130%;
+  vertical-align: super;
+}
+
+.stat p {
+  font-size: 18px;
+  color: #636363;
+  font-weight: 500;
+font-family: 'Poppins', sans-serif;
+}
+
+
+.quotes-stats .stat:first-child h4 {
+  color: #819361; 
+}
+
+
+
+
+
+/* Tablet Landscape (≤ 1024px) */
+@media (max-width: 1024px) {
+  .quotes-content {
+    column-gap: 40px;
+  }
+
+  .quotes-heading {
+    font-size: 32px;
+  }
+
+  .quotes-text, 
+  .quotes-text span {
+    font-size: 32px;
+  }
+
+  .stat h4 {
+    font-size: 32px;
+  }
+  .share-box{
+    text-align: center;
+  }
+}
+
+/* Tablet Portrait (≤ 768px) */
+@media (max-width: 768px) {
+  .quotes-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    column-gap: 0;
+  }
+
+  .quotes-left, 
+  .quotes-right {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+  .quotes-right {
+    margin-top: 40px;
+  }
+
+  .quotes-heading {
+    font-size: 28px;
+  }
+   .share-box{
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+
+  .quotes-text, 
+  .quotes-text span {
+    font-size: 28px;
+  }
+
+  .stat h4 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .quotes-stats {
+    justify-content: center;
+    gap: 40px;
+  }
+}
