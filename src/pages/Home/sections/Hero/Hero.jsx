@@ -1,5 +1,5 @@
 
-import smallImg from "../../../../assets/Sub Heading.png";  
+import smallImg from "../../../../assets/Sub heading.png";  
 import arrowIcon from "../../../../assets/chevron-right.png";  
 import contactImg from "../../../../assets/homephone.png";  
 import heroMainImg from "../../../../assets/group.png"; 
